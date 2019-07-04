@@ -25,9 +25,13 @@ body {
 .central-image {
 	margin-top: 5em;
 	width: 100%;
-	position: relative;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
 	height: auto;
 }
+.current{ display: block; }
 .main-image{
 	position: relative;
 	width: 100%;
