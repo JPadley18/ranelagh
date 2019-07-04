@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	fade();
+	setTimeout(fade, 5000);
 });
 
 // Fade allows the creation of an animated image slider
