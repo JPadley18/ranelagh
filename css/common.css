@@ -1,10 +1,15 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
 .navbar{
 	overflow: hidden;
 	position: fixed;
 	z-index: 1;
 	top: 0;
 	width: 100%;
-	height: 6%;
+	height: 5em;
 	background-color: #3A5A89;
 }
 .navbar-element{
@@ -18,25 +23,48 @@
 .logo-image{ height: 100%; }
 
 .central-image {
-	margin-top: 60px;
+	margin-top: 5em;
 	width: 100%;
 	position: relative;
 	height: auto;
 }
-.central-image img{
-	border-radius: 0 0 0 100%;
-	display: block;
+.main-image{
+	position: relative;
 	width: 100%;
+}
+.toplayer{
+	border-radius: 0 0 0 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.midlayer{
+	background-color: #3A5A89;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.6;
+}
+.backdrop{
+	position: relative;
+	z-index: -1;
 }
 .central-image p{
 	margin: 0;
 	width: 100%;
-	font-size: 120%;
+	font-size: 150%;
 	font-family: "Ubuntu", sans-serif;
 }
 .caption{
+	background-color: #3a4d89;
+	border-radius: 20px;
 	position: absolute;
+	padding: 0.5em 1em;
 	max-width: 30%;
-	bottom: 4em;
+	bottom: 3em;
 	left: 1em;
+	color: white;
 }
